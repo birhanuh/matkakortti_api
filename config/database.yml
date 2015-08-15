@@ -1,0 +1,25 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: matkakortti_api_development
+  username: admin
+  password: 1234
+  host: localhost
+
+test:
+  <<: *default
+  database: matkakortti_api_test
+  username: admin
+  password: 1234
+  host: localhost
+  
+production:
+  <<: *default
+  database: matkakortti_api_production
+  username: matkakortti_api
+  password: <%= ENV['MATKAKORTTI_API_DATABASE_PASSWORD'] %>
