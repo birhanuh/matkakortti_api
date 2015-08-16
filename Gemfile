@@ -13,12 +13,20 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'slim-rails'
-gem 'rails-api'
+gem 'rails-api', '~> 0.4.0'
 gem 'active_model_serializers'
+gem 'pry-rails'
+gem 'kaminari'
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
-
- 
+	gem 'guard'
+	gem 'guard-livereload'
+	gem 'guard-rspec'
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'factory_girl_rails'
+	gem 'database_cleaner'
+	gem 'shoulda-matchers' 
 end
 
