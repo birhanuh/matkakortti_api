@@ -7,16 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Contact.create(
-  [ { name: "Jeremy Kemper", twitter: "@bitsweat", relationship: "friend" },
-    { name: "David Heinemeir Hansson", twitter: "@dhh", relationship: "business" },
-    { name: "Jose Valim", twitter: "@josevalim", relationship: "business" },
-    { name: "Aaron Patterson", twitter: "@tenderlove", relationship: "business" },
-    { name: "Josh Peek", twitter: "@joshp", relationship: "business" },
-    { name: "Xavier Noria", twitter: "@fxn", relationship: "business" },
-    { name: "Yehuda Katz", twitter: "@wycats", relationship: "business" },
-    { name: "Patrik Naik", twitter: "@lifo", relationship: "friend" },
-    { name: "Santiago Pastorino", twitter: "@spastorino", relationship: "business" },
-    { name: "Carl Lerche", twitter: "@carllerche", relationship: "business" },
-    { name: "Emilio Tagua", twitter: "@miloops", relationship: "business" },
-    { name: "Ryan Bigg", twitter: "@ryanbigg", relationship: "business" }
+  [ { first_name: "Jeremy", second_name: "Kemper", twitter: "@bitsweat", relationship: "friend" },
+    { first_name: "David", second_name: "Heinemeir Hansson", twitter: "@dhh", relationship: "business" },
+    { first_name: "Jose", second_name: " Valim", twitter: "@josevalim", relationship: "business" },
+    { first_name: "Aaron", second_name: "Patterson", twitter: "@tenderlove", relationship: "business" },
+    { first_name: "Josh", second_name: " Peek", twitter: "@joshp", relationship: "business" },
+    { first_name: "Xavier", second_name: "Noria", twitter: "@fxn", relationship: "business" },
+    { first_name: "Yehuda", second_name: "Katz", twitter: "@wycats", relationship: "business" },
+    { first_name: "Patrik", second_name: " Naik", twitter: "@lifo", relationship: "friend" },
+    { first_name: "Santiago", second_name: " Pastorino", twitter: "@spastorino", relationship: "business" },
+    { first_name: "Carl", second_name: " Lerche", twitter: "@carllerche", relationship: "business" }
   ])

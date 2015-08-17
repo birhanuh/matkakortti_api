@@ -6,6 +6,16 @@ class API::V1::ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
+    # Filter for first name
+    @contacts = @contacts.first_name(params[:first_name]) if params[:first_name]
+
+    # Filter for second name
+    @contacts = @contacts.second_name(params[:second_name]) if params[:second_name]
+
+
+    # Filter for twitter
+    @contacts = @contacts.twitter(params[:twitter]) if params[:twitter]
+
     # Search
     @contacts = @contacts.search(params[:q]) if params[:q]
 
@@ -69,6 +79,6 @@ class API::V1::ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:name, :email, :twitter)
+      params.require(:contact).permit(:first_name, :second_name, :email, :twitter)
     end
 end
