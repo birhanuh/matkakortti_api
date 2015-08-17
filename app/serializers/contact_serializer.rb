@@ -1,3 +1,3 @@
 class ContactSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :twitter, :relationship
+  attributes :id, :first_name, :second_name, :email, :twitter, :relationship
 end
